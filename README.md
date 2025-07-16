@@ -60,7 +60,7 @@ Antes de começar, certifique-se de ter:
 ### 1. Clone o repositório:
 
 ```bash
-git clone <URL_DO_SEU_REPOSITORIO>
+git clone https://github.com/Jonatas-Felipe/teste-front-end-teddy
 cd teste-front-end-teddy
 ```
 
