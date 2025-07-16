@@ -205,6 +205,12 @@ const Clients: React.FC = () => {
 
   const handleDeleteClient = useCallback(async () => {
     try {
+      const clientSelectedData = clientsSelected.find(
+        (client) => client.id === clientSelected.id
+      );
+      if (clientSelectedData) {
+        removeSelectecClient(clientSelectedData.id);
+      }
       await api.delete(`/users/${clientSelected.id}`);
       handleClose();
       handleLoadClients(currentPage, limit);
